@@ -1,10 +1,10 @@
 <template>
-    <div class="mainContainer">
+    <div id="Home" class="mainContainer">
         <p class="mainTitle">
             Hello World, I'm <span class="myName">Thomas Vandenbussche</span><br>
             I'm a fullstack JavaScript developer
         </p>
-        <a class="toMyWorkButton" href="#navbar">To my work →</a>
+        <a class="toMyWorkButton" href="#Navbar">To my work →</a>
     </div>
 </template>
 
@@ -17,6 +17,7 @@
 
 <style scoped>
     .mainContainer {
+        margin-bottom: 0;
         display: flex;
         flex-direction: column;
         background-image: url('../assets/background.png');
