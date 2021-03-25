@@ -110,6 +110,7 @@
                 cvLink.innerHTML = "Access the website →"
                 cvLink.style.border="solid white 2px"
                 cvLink.style.padding="6px"
+                cvLink.style.cursor = "pointer"
                 cvLink.addEventListener('click', function() {
                     window.open(
                         "https://vandethom.github.io/OikoPolis/index.html",
@@ -139,6 +140,7 @@
                 ohMyFoodLink.innerHTML = "Access the website →"
                 ohMyFoodLink.style.border="solid white 2px"
                 ohMyFoodLink.style.padding="6px"
+                ohMyFoodLink.style.cursor = "pointer"
                 ohMyFoodLink.addEventListener('click', function() {
                     window.open(
                         "https://vandethom.github.io/ohmyfood/index.html",
@@ -168,6 +170,7 @@
                 laChouetteAgenceLink.innerHTML = "Access the website →"
                 laChouetteAgenceLink.style.border="solid white 2px"
                 laChouetteAgenceLink.style.padding="6px"
+                laChouetteAgenceLink.style.cursor = "pointer"
                 laChouetteAgenceLink.addEventListener('click', function() {
                     window.open(
                         "https://vandethom.github.io/LaChouetteAgenceSEO/",
@@ -197,6 +200,7 @@
                 orinobearLink.innerHTML = "Access the website →"
                 orinobearLink.style.border="solid white 2px"
                 orinobearLink.style.padding="6px"
+                orinobearLink.style.cursor = "pointer"
                 orinobearLink.addEventListener('click', function() {
                     window.open(
                         "https://vandethom.github.io/Oribear/",
@@ -226,6 +230,7 @@
                 essentiallyOilsLink.innerHTML = "Access the website →"
                 essentiallyOilsLink.style.border="solid white 2px"
                 essentiallyOilsLink.style.padding="6px"
+                essentiallyOilsLink.style.cursor = "pointer"
                 essentiallyOilsLink.addEventListener('click', function() {
                     window.open(
                         "https://essential-7fc0d.web.app/",
@@ -256,6 +261,7 @@
                 oikoPolisLink.innerHTML = "Access the website →"
                 oikoPolisLink.style.border="solid white 2px"
                 oikoPolisLink.style.padding="6px"
+                oikoPolisLink.style.cursor = "pointer"
                 oikoPolisLink.addEventListener('click', function() {
                     window.open(
                         "https://vandethom.github.io/OikoPolis/index.html",
@@ -285,6 +291,7 @@
                 soPecockoLink.innerHTML = "Access the website →"
                 soPecockoLink.style.border="solid white 2px"
                 soPecockoLink.style.padding="6px"
+                soPecockoLink.style.cursor = "pointer"
                 soPecockoLink.addEventListener('click', function() {
                     window.open(
                         "https://github.com/Vandethom/SoPecocko",
@@ -314,6 +321,7 @@
                 moviesAndMeLink.innerHTML = "Access the website →"
                 moviesAndMeLink.style.border="solid white 2px"
                 moviesAndMeLink.style.padding="6px"
+                moviesAndMeLink.style.cursor = "pointer"
                 moviesAndMeLink.addEventListener('click', function() {
                     window.open(
                         "https://github.com/Vandethom/MoviesAndMe",
@@ -343,6 +351,7 @@
                 rpProjectLink.innerHTML = "Access the website →"
                 rpProjectLink.style.border="solid white 2px"
                 rpProjectLink.style.padding="6px"
+                rpProjectLink.style.cursor = "pointer"
                 rpProjectLink.addEventListener('click', function() {
                     window.open(
                         "https://github.com/Vandethom/RP-API",
@@ -406,7 +415,7 @@
         text-align: center;
         padding: 5px;
         border-radius: 15%;
-        background: rgb(53, 20, 143);
+        background: rgb(21, 19, 155);
         color: white;
         width: 350px;
         height: 350px;
