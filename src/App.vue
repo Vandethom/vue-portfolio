@@ -3,6 +3,7 @@
     <Banner />
     <Navbar />
     <About />
+    <Projects />
   </div>
 </template>
 
@@ -16,6 +17,8 @@ const Navbar = defineAsyncComponent(() =>
   import("./components/Navbar"))
 const About = defineAsyncComponent(() => 
   import("./components/About"))
+const Projects = defineAsyncComponent(() => 
+  import("./components/Projects"))
 
 
 export default {
@@ -23,7 +26,8 @@ export default {
   components: {
     Banner,
     Navbar,
-    About
+    About,
+    Projects
   }
 }
 </script>
