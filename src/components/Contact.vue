@@ -155,7 +155,12 @@
 
         .contactHeader {
             flex-direction: column;
-            text-align: center;
         }
+
+        .contactHeader > p, #Contact > div.contactHeader > div {
+            align-self: center;
+        }
+
+        
     }
 </style>
