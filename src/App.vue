@@ -4,6 +4,7 @@
     <Navbar />
     <About />
     <Projects />
+    <Contact />
   </div>
 </template>
 
@@ -19,6 +20,8 @@ const About = defineAsyncComponent(() =>
   import("./components/About"))
 const Projects = defineAsyncComponent(() => 
   import("./components/Projects"))
+const Contact = defineAsyncComponent(() => 
+  import("./components/Contact"))
 
 
 export default {
@@ -27,7 +30,8 @@ export default {
     Banner,
     Navbar,
     About,
-    Projects
+    Projects,
+    Contact,
   }
 }
 </script>
