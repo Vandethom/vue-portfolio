@@ -37,9 +37,20 @@ export default {
 </script>
 
 <style>
-body {
-  font-family: 'Calibri, Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  margin: 0;
-  scroll-behavior: smooth;
-}
+  html {    
+        scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Calibri, Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0;
+  }
+
+  @media all and (max-width: 1024px) {
+    html {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
 </style>

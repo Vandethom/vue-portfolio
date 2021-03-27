@@ -1,5 +1,5 @@
 <template>
-    <div class="contactContainer">
+    <div id="Contact" class="contactContainer">
         <div class="contactHeader">
             <p>Interested in working together? Just contact me with details about your project.</p>
             <div class="phoneAndMail">
@@ -148,4 +148,9 @@
         height: 6vh;
     }
     
+    @media all and (max-width: 1024px) {
+        .formInput {
+            width: 75%;
+        }
+    }
 </style>

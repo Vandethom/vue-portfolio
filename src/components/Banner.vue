@@ -1,10 +1,5 @@
 <template>
     <div id="Home" class="mainContainer">
-        <p class="mainTitle">
-            Hello World, I'm <span class="myName">Thomas Vandenbussche</span><br>
-            I'm a fullstack JavaScript developer
-        </p>
-        <a class="toMyWorkButton" href="#Navbar">To my work →</a>
         <vue-particles
         class="particles"
         color="#dedede"
@@ -22,7 +17,12 @@
         hoverMode="grab"
         :clickEffect="true"
         clickMode="push"
-      />
+        />
+        <p class="mainTitle">
+            Hello World, I'm <span class="myName">Thomas Vandenbussche</span><br>
+            I'm a fullstack JavaScript developer
+        </p>
+        <a class="toMyWorkButton" href="#Navbar">To my work →</a>        
     </div>
 </template>
 
@@ -64,10 +64,20 @@
     }
 
     .toMyWorkButton {
+        z-index: 1;
         text-decoration: none;
         color: white;
         border: 2px solid white;
         padding: 1.5vh;
         font-size: 26px;
     }
+
+
+    @media all and (max-width: 1024px) {
+        .mainTitle {
+            text-align: center;
+            font-size: 34px;
+        }
+    }
+    
 </style>

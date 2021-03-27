@@ -102,6 +102,7 @@
 
     .selfDescription > p {
         width: 31vh;
+        margin-bottom: 16vh;
     }
 
     .idPhoto {
@@ -111,6 +112,7 @@
 
     .asideAbout {
         display: flex;
+        margin-bottom: 11vh;
     }
 
     .knowledges {
@@ -148,5 +150,42 @@
             inset 0 -2px 6px rgba(0, 0, 0, 0.4);
         position: relative;
         overflow: hidden;
-}
+    }
+
+    @media all and (max-width: 1024px) {
+        .myTalents {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .skill {
+            margin: 0;
+            text-align: center;
+        }
+
+        .skill > p {
+            width: 25vh;
+        }
+
+        .asideAbout {            
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .idPhoto {
+            width: 33vh;
+            height: 33vh;
+        }
+
+        .selfDescription {
+            text-align: center;
+        }
+
+        .knowledges {
+            margin: auto;
+        }
+    }
+
 </style>

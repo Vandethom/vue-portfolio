@@ -4,7 +4,7 @@
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="#Contact">Contacts</a></li>
         </ul>
     </nav>
 </template>
@@ -42,4 +42,18 @@
         text-decoration: none;
         color: white;
     }
+
+    @media all and (max-width: 1024px) {
+        .navbar {
+            height: 115px;
+        }
+        
+        .navLinks {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 0;
+        }
+    }
+    
 </style>
