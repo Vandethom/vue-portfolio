@@ -152,5 +152,10 @@
         .formInput {
             width: 75%;
         }
+
+        .contactHeader {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 </style>
