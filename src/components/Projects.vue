@@ -1,5 +1,5 @@
 <template>
-    <div class="projectsContainer">
+    <div id="Projects" class="projectsContainer">
         <h2>My Projects</h2>
         <div class="projects">
             <div
@@ -470,6 +470,12 @@
     .rpProject {
         background-image: url('../assets/rp-project.png');
         background-size: 350px;
+    }
+
+    @media all and (max-width: 1024px) {
+        .project {
+            margin-bottom: 4vh;
+        }
     }
 </style>
     
