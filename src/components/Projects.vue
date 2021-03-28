@@ -53,10 +53,20 @@
                 <p id="essentiallyOilsLink"></p>
             </div>
             <div
+                id="groupomania"
+                class="project groupomania"
+                @mouseover="hoverGroupomania" 
+                @mouseleave="leaveGroupomania"
+            >
+                <h1 id="groupomaniaTitle"></h1>
+                <p id="groupomaniaDescription"></p>
+                <p id="groupomaniaLink"></p>
+            </div>
+            <div
                 id="oikoPolis"
                 class="project oikoPolis"
                 @mouseover="hoverOikoPolis" 
-                @mouseleave="leaveOikoPolis" 
+                @mouseleave="leaveOikoPolis"
             >
                 <h1 id="oikoPolisTitle"></h1>
                 <p id="oikoPolisDescription"></p>
@@ -249,7 +259,36 @@
                 essentiallyOilsLink.innerHTML = ""
                 essentiallyOilsLink.style = "none"
             },
-            
+            hoverGroupomania() {
+                const groupomania = document.getElementById('groupomania')
+                const groupomaniaTitle = document.getElementById('groupomaniaTitle')
+                const groupomaniaDescription = document.getElementById('groupomaniaDescription')
+                const groupomaniaLink = document.getElementById('groupomaniaLink')
+                groupomania.className="hoveredProject"
+                groupomaniaTitle.innerHTML = 'A Personal roleplay API'
+                groupomaniaDescription.innerHTML = 'Construction of a fullstack website using Vue.js, Node.js and Sequelize to create a social media for hypothetical society.'
+                groupomaniaLink.innerHTML = "Access the website →"
+                groupomaniaLink.style.border="solid white 2px"
+                groupomaniaLink.style.padding="6px"
+                groupomaniaLink.style.cursor = "pointer"
+                groupomaniaLink.addEventListener('click', function() {
+                    window.open(
+                        "https://github.com/Vandethom/groupomania",
+                        '_blank'
+                    ) 
+                })               
+            },
+            leaveGroupomania() {
+                const groupomania = document.getElementById('groupomania')
+                const groupomaniaTitle = document.getElementById('groupomaniaTitle')
+                const groupomaniaDescription = document.getElementById('groupomaniaDescription')
+                const groupomaniaLink = document.getElementById('rpProjectLink')
+                groupomania.className="project groupomania"
+                groupomaniaTitle.innerHTML = ""
+                groupomaniaDescription.innerHTML = ""
+                groupomaniaLink.innerHTML = ""
+                groupomaniaLink.style = "none"
+            },
             hoverOikoPolis() {
                 const oikoPolis = document.getElementById('oikoPolis')
                 const oikoPolisTitle = document.getElementById('oikoPolisTitle')
@@ -469,6 +508,11 @@
 
     .rpProject {
         background-image: url('../assets/rp-project.png');
+        background-size: 350px;
+    }
+
+    .groupomania {
+        background-image: url('../assets/groupomania.png');
         background-size: 350px;
     }
 
