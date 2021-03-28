@@ -81,7 +81,7 @@
     }
 
     .skill {
-        width: 170px;
+        width: 160px;
         margin: 4vh 2vh 0 2vh;
     }
 
@@ -98,6 +98,7 @@
     .selfDescription {
         width: 30vh;
         height: 50vh;
+        margin-bottom: 12vh;
     }
 
     .selfDescription > p {
