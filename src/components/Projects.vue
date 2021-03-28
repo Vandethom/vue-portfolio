@@ -113,7 +113,7 @@
                 cvLink.style.cursor = "pointer"
                 cvLink.addEventListener('click', function() {
                     window.open(
-                        "https://vandethom.github.io/OikoPolis/index.html",
+                        "https://vandethom.github.io/cv-thomas-vandenbussche/",
                         '_blank'
                     ) 
                 })
@@ -304,7 +304,7 @@
                 const soPecockoTitle = document.getElementById('soPecockoTitle')
                 const soPecockoDescription = document.getElementById('soPecockoDescription')
                 const soPecockoLink = document.getElementById('soPecockoLink')
-                soPecocko.className="project ohMyFood"
+                soPecocko.className="project soPecocko"
                 soPecockoTitle.innerHTML = ""
                 soPecockoDescription.innerHTML = ""
                 soPecockoLink.innerHTML = ""
@@ -475,6 +475,7 @@
     @media all and (max-width: 1024px) {
         .project {
             margin-bottom: 4vh;
+            background-repeat: no-repeat;
         }
     }
 </style>
